@@ -91,6 +91,8 @@ void sort_projects (
       sorted.push_back (project);
     }
   }
+  // children are not inserted in ascending order like their parents; do a final sort to fix that
+  sorted.sort();
 }
 
 void sort_projects (
